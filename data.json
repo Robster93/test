@@ -1,8 +1,10 @@
 {
-  {
-    "builtYear": "1993",
-    "name": "Mustang GT"
-  }  
+  "car": [
+    {
+      "builtYear": "1993",
+      "name": "Mustang GT"
+    }
+  ]
 }
 
 
