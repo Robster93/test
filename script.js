@@ -7,7 +7,7 @@ function loadNewElement(site) {
 		
 		element.innerHTML = '<object type="text/html" data="input.html"></object>'
 		
-		var xmlhttp = new XMLHttpRequest();
+		/*var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
 				var myObj = JSON.parse(this.responseText);
@@ -17,7 +17,7 @@ function loadNewElement(site) {
 		
 		xmlhttp.open("GET", "data.json", true);
 		xmlhttp.send();
-		
+		*/
 	} else if (site == 2) {
 		var element = document.getElementById("container");
 		
