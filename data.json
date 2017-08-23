@@ -1,10 +1,11 @@
 {
-  "car": [
-    {
-      "builtYear": "1993",
-      "name": "Mustang GT"
-    }
-  ]
+    "name":"John",
+    "age":31,
+    "pets":[
+        { "animal":"dog", "name":"Fido" },
+        { "animal":"cat", "name":"Felix" },
+        { "animal":"hamster", "name":"Lightning" }
+    ]
 }
 
 
