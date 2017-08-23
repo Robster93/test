@@ -1,5 +1,5 @@
 
-function onload() {
+function loadJSON(callback) {
 	//document.getElementById("carContainer").innerHTML = "Hello";
 	
 	var xmlhttp = new XMLHttpRequest();
@@ -8,10 +8,18 @@ function onload() {
 	xmlhttp.open("GET", "data.json", true);
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-				var myObj = JSON.parse(this.responseText);
-				document.getElementById("carContainer").innerHTML = myObj.name;
+				callback(xmlhttp.resopnseText);
 			}
 		};
 				
 	xmlhttp.send(null);
 }
+
+function init() {
+	loadJSON(function(resopnse) {
+		var actual_JSON = JSON.parse(resopnse);
+		document.getElementById("carContainer").innerHTML = myObj.name;
+		alert("It's a " + myObj.name);
+	}
+}
+
