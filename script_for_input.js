@@ -20,6 +20,6 @@ function init() {
 		var actual_JSON = JSON.parse(resopnse);
 		document.getElementById("carContainer").innerHTML = myObj.name;
 		alert("It's a " + myObj.name);
-	}
+	});
 }
 
