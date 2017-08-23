@@ -7,6 +7,8 @@ function loadNewElement(site) {
 		
 		element.innerHTML = '<object type="text/html" data="input.html"></object>'
 		
+		document.getElementById("carContainer").innerHTML = "lala"
+		
 		var xmlhttp = new XMLHttpRequest();
 		xmlhttp.onreadystatechange = function() {
 			if (this.readyState == 4 && this.status == 200) {
