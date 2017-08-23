@@ -2,7 +2,7 @@
 
 function loadNewElement(site) {
 	
-	if (site == 1) {
+	//if (site == 1) {
 		var element = document.getElementById("container");
 		
 		element.innerHTML = '<object type="text/html" data="input.html"></object>'
@@ -18,10 +18,10 @@ function loadNewElement(site) {
 		xmlhttp.open("GET", "data.json", true);
 		xmlhttp.send();
 		*/
-	} else if (site == 2) {
+	/*} else if (site == 2) {
 		var element = document.getElementById("container");
 		
 		element.innerHTML = '<object type="text/html" data="input.html"></object>'
-	}
+	}*/
 	
 }
