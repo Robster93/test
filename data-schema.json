@@ -1,0 +1,18 @@
+
+{
+	"$schema": "http://json-schema.org/draft-04/schema#",
+	"title": "Car",
+	"description": "A machine moving on four wheels"
+	"type": "object",
+	
+	"properties": {
+		"name": { "type": "string" },
+		"builtYear": {"type": "integer" }
+	},
+	
+	"additionalProperties": false,
+	"required": ["name", "builtYear"]
+}
+
+
+
