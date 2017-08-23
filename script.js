@@ -5,7 +5,7 @@ function loadNewElement(site) {
 	if (site == "news") {
 		var element = document.getElementById("container");
 		
-		element.innerHTML = '<object type="text/html" data="input.html"></object>'
+		element.innerHTML = '<h1>asdasdkjh</h1>'
 			
 		
 		
