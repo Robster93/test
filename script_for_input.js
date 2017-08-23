@@ -8,7 +8,7 @@ function loadJSON(callback) {
 	xmlhttp.open("GET", "data.json", true);
 	xmlhttp.onreadystatechange = function() {
 		if (this.readyState == 4 && this.status == 200) {
-				callback(xmlhttp.resopnseText);
+				callback(xmlhttp.responseText);
 			}
 		};
 				
@@ -16,8 +16,8 @@ function loadJSON(callback) {
 }
 
 function init() {
-	loadJSON(function(resopnse) {
-		var actual_JSON = JSON.parse(resopnse);
+	loadJSON(function(response) {
+		var actual_JSON = JSON.parse(response);
 		document.getElementById("carContainer").innerHTML = myObj.name;
 		alert("It's a " + myObj.name);
 	});
