@@ -2,6 +2,13 @@
 <html>
 	<head>
 		<style>
+			nav {				
+				margin-top: 0;	
+				max-width: 100%;	
+				display: relative;	
+				background-color: #333333;
+			}
+
 			nav ul {
 				list-style-type: none;
 				margin: 0;
@@ -15,7 +22,7 @@
 			}
 
 			nav ul li a {
-				display: block;
+				display: inline-block;
 				color: white;
 				text-align: center;
 				padding: 16px;
@@ -26,27 +33,55 @@
 				background-color: #111111;
 			}
 
+			.logo {
+				float: right;
+				margin-right: 0;
+				margin-top: 10;
+				max-width: 20%;
+				background-color:white;
+				display: relative;
+			}
+
+			.logo img {
+				width: 100%;
+				min-width: 50px;
+				height: auto;
+				float: right;
+				margin-top: 0;
+				background-color: transparent;
+			}
+
 			header, footer {
 				padding: 1em;
 				color: white;
 				background-color: #333333;
 				clear: left;
 				text-align: center;
-			}
+			}	
+
+
 		</style>
 		
 		<script src="script.js"></script>
 	</head>
 		<body>
+			
+			<div class="header_container">
+				<div class="logo">
+					<img src="Images/Logo_transparent.png">
+				</div>
 
-			<nav>
-				<ul>
-				  <li><a href="#home">Home</a></li>
-				  <li><a href="#news" onclick="loadNewElement('news')">News</a></li>
-				  <li><a href="#contact" onclick="loadNewElement('contact')">Contact</a></li>
-				  <li><a href="#about">About</a></li>
-				</ul>
-			</nav>
+				<nav>
+					<ul>
+					<li><a href="#home">Home</a></li>
+					<li><a href="#news" onclick="loadNewElement('news')">News</a></li>
+					<li><a href="#contact" onclick="loadNewElement('contact')">Contact</a></li>
+					<li><a href="#about">About</a></li>				  				  
+					</ul>
+				</nav>
+			</div>
+			
+			
 
 			<div id="container">
 				<p>Hallo asdasd</p>

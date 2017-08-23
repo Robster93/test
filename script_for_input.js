@@ -18,8 +18,8 @@ function loadJSON(callback) {
 function init() {
 	loadJSON(function(response) {
 		var actual_JSON = JSON.parse(response);
-		document.getElementById("carContainer").innerHTML = actual_JSON.name;
-		alert("It's a " + actual_JSON.name);
+		document.getElementById("carContainer").innerHTML = actual_JSON.cars[2].name;
+		//alert("It's a " + actual_JSON.name);
 	});
 }
 
